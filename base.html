@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Здесь должны быть мета-теги, заголовок, ссылки на CSS и т.д. -->
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body class="main-layout {% block body_class %}{% endblock %}">
+    <header>
+        <div class="header">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                        <div class="full">
+                            <div class="center-desk">
+                                <div class="logo">
+                                    <a href="index.html"><img src="images/logo.png" alt="#" /></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                        <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarsExample04">
+                                <ul class="navbar-nav mr-auto">
+                                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="service.html">Service</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact us</a></li>
+                                    <li class="nav-item d_none"><a class="nav-link" href="#"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+                                    <li class="nav-item d_none"><a class="nav-link" href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end header inner -->
+
+    {% block content %}{% endblock %}
+
+    <!-- footer -->
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-12">
+                                <div class="hedingh3 text_align_left">
+                                    <h3>About</h3>
+                                    <p>Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable sourc</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12">
+                                <div class="hedingh3 text_align_left">
+                                    <h3>Blog</h3>
+                                    <p>Which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anythin</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-12">
+                                <div class="hedingh3 text_align_left">
+                                    <h3>Menu</h3>
+                                    <ul class="menu_footer">
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="about.html">About</a></li>
+                                        <li><a href="service.html">Service</a></li>
+                                        <li><a href="blog.html">Blog</a></li>
+                                        <li><a href="contact.html">Contact us</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12">
+                                <div class="hedingh3 text_align_left">
+                                    <h3>Newsletter</h3>
+                                    <form id="colof" class="form_subscri">
+                                        <input class="newsl" placeholder="Email" type="text" name="Email">
+                                        <button class="subsci_btn">Subscribe</button>
+                                    </form>
+                                    <ul class="top_infomation">
+                                        <li><i class="fa fa-phone" aria-hidden="true"></i> +01 1234567890</li>
+                                        <li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:demo@gmail.com">demo@gmail.com</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="follow text_align_center">
+                                <h3>Follow Us</h3>
+                                <ul class="social_icon">
+                                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <p>© 2020 All Rights Reserved. Design by <a href="https://html.design/">Free html Templates</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+
+    <!-- Javascript files-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/bootstrap-datepicker.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+</html>
