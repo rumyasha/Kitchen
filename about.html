@@ -1,0 +1,70 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>About Us</title>
+
+   <!-- Подключение стилей -->
+   <link rel="stylesheet" href="{% static 'css/style.css' %}">
+   <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+   <link rel="stylesheet" href="{% static 'font-awesome/css/font-awesome.min.css' %}">
+</head>
+<body class="main-layout inner_page">
+   <header>
+      <div class="container">
+         <div class="row">
+            <div class="col-md-12">
+               <div class="full">
+                  <div class="header_section">
+                     <div class="menu_section">
+                        <nav class="navbar">
+                           <ul>
+                              <li><a href="{% url 'home' %}">Home</a></li>
+                              <li><a class="active" href="{% url 'about' %}">About</a></li>
+                              <li><a href="{% url 'services' %}">Service</a></li>
+                              <li><a href="{% url 'blog' %}">Blog</a></li>
+                              <li><a href="{% url 'contact' %}">Contact us</a></li>
+                              <li class="d_none"><a href="javascript:void(0)"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+                              <li class="d_none"><a href="javascript:void(0)"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                           </ul>
+                           <button class="nav-toggler">
+                              <span></span>
+                           </button>
+                        </nav>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </header>
+   <!-- end header inner -->
+
+   <!-- about -->
+   <div class="about">
+      <div class="container_width">
+         <div class="row d_flex grig">
+            <div class="col-md-6">
+               <div class="about_img">
+                  <figure><img src="{% static 'images/about_img.jpg' %}" alt="About Us Image"/></figure>
+               </div>
+            </div>
+            <div class="col-md-6 order">
+               <div class="titlepage text_align_left">
+                  <h2>About Our Center</h2>
+                  <p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipsed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+                  <a class="read_more" href="{% url 'about' %}">Read More</a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- end about -->
+
+   <!-- Подключение скриптов -->
+   <script src="{% static 'js/jquery.min.js' %}"></script>
+   <script src="{% static 'js/custom.js' %}"></script>
+</body>
+</html>
