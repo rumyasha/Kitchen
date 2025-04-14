@@ -1,0 +1,81 @@
+{% load static %}
+<body class="main-layout inner_page">
+   <header>
+      <div class="container">
+         <div class="row">
+            <div class="col-md-12">
+               <div class="full">
+                  <div class="header_section">
+                     <div class="menu_section">
+                        <nav class="navbar">
+                           <ul>
+                              <li><a href="{% url 'home' %}">Home</a></li>
+                              <li><a href="{% url 'about' %}">About</a></li>
+                              <li><a href="{% url 'service' %}">Service</a></li>
+                              <li><a href="{% url 'blog' %}">Blog</a></li>
+                              <li><a class="active" href="{% url 'contact' %}">Contact us</a></li>
+                              <li class="d_none"><a href="Javascript:void(0)"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+                              <li class="d_none"><a href="Javascript:void(0)"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                           </ul>
+                           <button class="nav-toggler">
+                              <span></span>
+                           </button>
+                        </nav>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </header>
+   <!-- end header inner -->
+
+   <!-- appointment -->
+   <div class="appointment">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-12">
+               <div class="titlepage text_align_center">
+                  <h2>Contact Us</h2>
+                  <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu</p>
+               </div>
+            </div>
+            <div class="col-md-12">
+               <form id="request" class="main_form">
+                  <div class="row">
+                     <div class="col-md-6">
+                        <input class="form_control" placeholder="Your name" type="text" name="Name">
+                     </div>
+                     <div class="col-md-6">
+                        <input class="form_control" placeholder="Email" type="email" name="Email">
+                     </div>
+                     <div class="col-md-6">
+                        <input class="form_control" placeholder="Phone Number" type="text" name="Phone Number">
+                     </div>
+                     <div class="col-md-6">
+                        <input class="form_control" placeholder="Select Massage spa" type="text" name="Select">
+                     </div>
+                     <div class="col-md-6">
+                        <input class="form_control" placeholder="Time" type="text" name="Time">
+                     </div>
+                     <div class="col-md-6">
+                        <input type="text" class="form_control" id="my_date_picker" placeholder="Select Date">
+                     </div>
+                     <div class="col-md-12">
+                        <textarea style="color: #d0d0cf;" class="textarea" placeholder="Message" name="message">message</textarea>
+                     </div>
+                     <div class="col-md-12">
+                        <button class="send_btn">Send Now</button>
+                     </div>
+                  </div>
+               </form>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- end appointment -->
+
+   <!-- Подключение скриптов -->
+   <script src="{% static 'js/jquery.min.js' %}"></script>
+   <script src="{% static 'js/custom.js' %}"></script>
+</body>
