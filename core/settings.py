@@ -25,12 +25,13 @@ SECRET_KEY = os.getenv("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv("DEBUG")
 
-ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS").split(',')
+ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", "").split(',')
+
 
 
 # Application definition
 MY_APPS = [
-    'apps.spotify',
+    'apps.kitchen',
 ]
 THIRD_PARTY_APPS = [
 
@@ -59,7 +60,7 @@ ROOT_URLCONF = 'core.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR, 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
