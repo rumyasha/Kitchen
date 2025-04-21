@@ -32,6 +32,7 @@ ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", "").split(',')
 # Application definition
 MY_APPS = [
     'apps.kitchen',
+    'users',
 ]
 THIRD_PARTY_APPS = [
 
