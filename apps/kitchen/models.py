@@ -33,8 +33,8 @@ class Task(models.Model):
     recipe = models.CharField('рецепт', max_length=5000)
     time_of_cook = models.CharField('время готовки', max_length=50)
     recipe_tip = models.CharField('советы к рецепту', max_length=1000)
-    recipe_image = models.ImageField(upload_to='songs/image')
-    file = models.FileField(upload_to='songs')
+    recipe_image = models.ImageField(upload_to='recipe/image')
+    file = models.FileField(upload_to='recipe')
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
